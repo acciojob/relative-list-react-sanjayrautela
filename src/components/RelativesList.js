@@ -9,9 +9,9 @@ const relatives = [
 
 function RelativesList() {
   return (
-    <ol key="relativeList">
+    <ol id="relativeList">
       {relatives.map((relative) => (
-        <li key={relative.id}>{relative.name}</li>
+        <li key={relative.id} id={relative.id}>{relative.name}</li>
       ))}
     </ol>
   );
